@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-The agent-native-cli skill remains highly relevant and empirically grounded as of April 2026. The seven principles hold up well against the latest production deployments and comparative benchmarks. However, three areas warrant refinement:
+The agent-native-design skill remains highly relevant and empirically grounded as of April 2026. The seven principles hold up well against the latest production deployments and comparative benchmarks. However, three areas warrant refinement:
 
 1. **MCP-CLI hybrid approach** — The emerging consensus (confirmed by 2026 benchmarks) is that agents should use *both* CLIs and MCP servers, not one or the other. The skill currently positions them as competing choices.
 
@@ -250,7 +250,7 @@ Add these to the References section:
 
 ### Overall Assessment: ✅ **FUNDAMENTALLY SOUND, MINOR UPDATES RECOMMENDED**
 
-The agent-native-cli skill is well-designed and empirically grounded. The seven principles remain valid through April 2026. Three updates would bring it fully current:
+The agent-native-design skill is well-designed and empirically grounded. The seven principles remain valid through April 2026. Three updates would bring it fully current:
 
 1. **Hybrid MCP-CLI guidance** (P1) — Production agents use both; reframe the relationship.
 2. **Token efficiency data** (P1) — 2026 benchmarks quantify CLI advantages; cite them.

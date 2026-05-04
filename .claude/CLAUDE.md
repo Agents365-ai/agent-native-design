@@ -76,7 +76,7 @@ gh release create v1.2.1 --notes "Release notes here"
 If a user wants to pin to a specific version and not auto-update:
 
 ```bash
-cd ~/.claude/skills/agent-native-cli  # or wherever the skill is installed
+cd ~/.claude/skills/agent-native-design  # or wherever the skill is installed
 git checkout v1.2.0
 # Now locked to v1.2.0; use `git checkout main` to re-enable auto-updates
 ```
@@ -91,7 +91,7 @@ git checkout v1.2.0
 - Wait: Can take 1-5 minutes for GitHub sync
 
 **"Skill won't pull updates"**
-- Manual: `cd ~/.claude/skills/agent-native-cli && git pull origin main`
+- Manual: `cd ~/.claude/skills/agent-native-design && git pull origin main`
 - Check permissions: Verify `.claude/settings.local.json` allows git operations
 
 **"I want to revert to an older version"**
@@ -121,4 +121,4 @@ After these steps, all users will auto-pull the changes on their next session.
 ## Questions?
 
 For issues with auto-update, file a GitHub issue at:  
-https://github.com/Agents365-ai/agent-native-cli/issues
+https://github.com/Agents365-ai/agent-native-design/issues
