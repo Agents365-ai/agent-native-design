@@ -1,4 +1,4 @@
-# agent-native-design — Design CLIs that AI agents can actually use
+# Design CLIs that AI agents can actually use
 
 [中文文档](README_CN.md) · [Docs site](https://agents365-ai.github.io/agent-native-design/)
 
