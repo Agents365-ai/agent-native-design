@@ -1,5 +1,7 @@
 # Design CLIs that AI agents can actually use
 
+![One CLI · Three Audiences · Three Channels](docs/assets/concept-hero-en.png)
+
 [中文文档](README_CN.md) · [Docs site](https://agents365-ai.github.io/agent-native-design/)
 
 ## What it does

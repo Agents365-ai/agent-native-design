@@ -1,5 +1,7 @@
 # 为 AI 智能体设计真正可用的 CLI
 
+![一个 CLI · 三类观众 · 三条通道](docs/assets/concept-hero-zh.png)
+
 [English](README.md) · [文档站点](https://agents365-ai.github.io/agent-native-design/zh.html)
 
 ## 功能说明
