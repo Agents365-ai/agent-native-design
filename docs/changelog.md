@@ -2,6 +2,16 @@
 
 [← Back to README](../README.md)
 
+## v1.3.4 — June 18, 2026
+
+**Removed the in-skill update check (Step 0).**
+
+Claude Code's plugin marketplace and SkillsMP now track skill versions and surface upgrade prompts, so the notify-only Step 0 added in v1.3.2 / reworked in v1.3.3 is no longer load-bearing — it was dead weight loaded into context on every conversation. The update lifecycle now belongs entirely to the install channel (`/plugin update`, or `git pull` for direct clones, documented in the README).
+
+- Dropped `Step 0. Update check` from the standard review workflow in `SKILL.md`; the workflow now begins at Step 1.
+- Removed the orphaned `.last_update` throttle file.
+- Consistent with this skill's own *Principle 7* (the human/system owns the update lifecycle, not the agent) and closes the supply-chain surface a self-pull would reopen.
+
 ## v1.3.3 — May 5, 2026
 
 **Replaced Step 0 silent auto-pull with a notify-only update check.**

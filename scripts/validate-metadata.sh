@@ -15,10 +15,10 @@ assert_contains() {
   fi
 }
 
-assert_contains README.md '~/.codex/skills/agent-native-design'
-assert_contains README.md '.codex/skills/agent-native-design'
-assert_contains README_CN.md '~/.codex/skills/agent-native-design'
-assert_contains README_CN.md '.codex/skills/agent-native-design'
+assert_contains docs/install.md '~/.codex/skills/agent-native-design'
+assert_contains docs/install.md '.codex/skills/agent-native-design'
+assert_contains docs/install_CN.md '~/.codex/skills/agent-native-design'
+assert_contains docs/install_CN.md '.codex/skills/agent-native-design'
 
 assert_contains SKILL.md 'Includes sidecar metadata for OpenClaw, Hermes, pi-mono, and OpenAI Codex'
 assert_contains README.md 'includes metadata for the platforms listed below'
