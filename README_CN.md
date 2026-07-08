@@ -23,8 +23,8 @@
 |---|---|
 | [docs/install_CN.md](docs/install_CN.md) | 各平台安装命令(Claude Code / OpenClaw / Hermes / pi-mono / Codex / SkillsMP)与路径汇总 |
 | [docs/changelog.md](docs/changelog.md) | 从 v1.1.0 到 v1.3.4 的版本历史(英文) |
-| [SKILL.md](SKILL.md) | agent 加载的工作流指南 |
-| [references/](references/) | 按需加载的参考资料 —— 设计模式、评分标准、清单、示例、测试配方、引用文献 |
+| [SKILL.md](skills/agent-native-design/SKILL.md) | agent 加载的工作流指南 |
+| [references/](skills/agent-native-design/references/) | 按需加载的参考资料 —— 设计模式、评分标准、清单、示例、测试配方、引用文献 |
 
 ## 多平台支持
 
@@ -106,4 +106,4 @@
 
 ## License
 
-MIT
+CC BY-NC 4.0

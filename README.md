@@ -23,8 +23,8 @@ A skill that evaluates whether a CLI is reliably usable by AI agents and helps y
 |---|---|
 | [docs/install.md](docs/install.md) | Per-platform install (Claude Code / OpenClaw / Hermes / pi-mono / Codex / SkillsMP) and path summary |
 | [docs/changelog.md](docs/changelog.md) | Version history from v1.1.0 through v1.3.4 |
-| [SKILL.md](SKILL.md) | Workflow guide loaded by the agent |
-| [references/](references/) | On-demand reference material — design patterns, rubric, checklists, examples, testing recipes, citations |
+| [SKILL.md](skills/agent-native-design/SKILL.md) | Workflow guide loaded by the agent |
+| [references/](skills/agent-native-design/references/) | On-demand reference material — design patterns, rubric, checklists, examples, testing recipes, citations |
 
 ## Multi-Platform Support
 
@@ -106,4 +106,4 @@ If this skill helps your work, consider supporting the author:
 
 ## License
 
-MIT
+CC BY-NC 4.0

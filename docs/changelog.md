@@ -60,7 +60,7 @@ If you upgraded to v1.3.2, this is the right reason to upgrade once more.
 
 **Research Alignment:**
 - Cite 2026 benchmarks: CLI achieves 28% higher task completion, 33% token efficiency vs. MCP-only
-- Added 4 new references: Reinhardt, Chugh, RudderStack on hybrid patterns (2026)
+- Added 4 new references: Reinhard, Chawla, RudderStack on hybrid patterns (2026)
 - Validated all 7 principles through April 2026 production deployments
 
 **Recommendation:** This version reflects the consensus that large production agents (Claude Code, Cursor, Gemini CLI) use both CLI (for local/scriptable tasks) and MCP (for multi-tenant SaaS). Skill remains fundamentally sound; no principles required rewriting.

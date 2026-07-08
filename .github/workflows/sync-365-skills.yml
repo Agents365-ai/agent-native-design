@@ -51,8 +51,8 @@ jobs:
           print(json.loads(m.group(1)).get("version", "") if m else "")
           ')
           if [ -z "$version" ]; then
-            echo "::warning::could not parse version from SKILL.md frontmatter"
-            exit 0
+            echo "::error::could not parse version from SKILL.md frontmatter"
+            exit 1
           fi
           echo "Source version: $version"
           python3 - "$version" <<'PY'

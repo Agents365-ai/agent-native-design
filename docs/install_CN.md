@@ -2,6 +2,8 @@
 
 [← 返回 README](../README_CN.md)
 
+> **注意 (v1.3.5)：** SKILL.md 和参考文件现已移至仓库内的 `skills/agent-native-design/` 目录。以下安装命令仅将该子目录复制到你的 skills 路径中。通过 marketplace 安装（`/plugin install`、`clawhub install`、`skills install`）会自动处理。
+
 ## 快速安装 —— 让任意 Agent 帮你装
 
 最简单的方式是请任意一个具备编码能力的 Agent(Claude Code、Codex、Cursor、Aider、Gemini CLI……)把仓库克隆到你所在平台的 skills 目录。把 URL 和目标路径一起写在提示里:
@@ -16,10 +18,14 @@
 
 ```bash
 # 全局安装(在所有项目中可用)
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.claude/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.claude/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # 项目级安装
-git clone https://github.com/Agents365-ai/agent-native-design.git .claude/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design .claude/skills/ && \
+  rm -rf /tmp/agent-native-design
 ```
 
 ## OpenClaw / ClawHub
@@ -29,16 +35,22 @@ git clone https://github.com/Agents365-ai/agent-native-design.git .claude/skills
 clawhub install agent-native-design
 
 # 手动安装
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.openclaw/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.openclaw/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # 项目级安装
-git clone https://github.com/Agents365-ai/agent-native-design.git skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design skills/ && \
+  rm -rf /tmp/agent-native-design
 ```
 
 ## Hermes Agent
 
 ```bash
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.hermes/skills/engineering/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.hermes/skills/engineering/ && \
+  rm -rf /tmp/agent-native-design
 ```
 
 或在 `~/.hermes/config.yaml` 中添加:
@@ -52,17 +64,23 @@ skills:
 ## pi-mono
 
 ```bash
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.pimo/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.pimo/skills/ && \
+  rm -rf /tmp/agent-native-design
 ```
 
 ## OpenAI Codex
 
 ```bash
 # 用户级安装(默认 CODEX_HOME)
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.codex/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.codex/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # 项目级安装
-git clone https://github.com/Agents365-ai/agent-native-design.git .codex/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design .codex/skills/ && \
+  rm -rf /tmp/agent-native-design
 ```
 
 ## SkillsMP
