@@ -258,7 +258,7 @@
       <p>Design CLIs that AI agents can actually use. Stable stdout contracts, deterministic exit codes, dry-run, schema introspection, and delegated auth &mdash; as a review and refactor skill.</p>
       <img class="hero-image" src="assets/concept-hero-en.png" alt="One CLI serving three audiences: stderr to humans, stdout JSON to AI agents, exit codes to systems" loading="lazy">
       <div class="hero-install">
-        <code id="install-cmd">git clone https://github.com/Agents365-ai/agent-native-design.git ~/.claude/skills/agent-native-design</code>
+        <code id="install-cmd">git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design &amp;&amp; cp -r /tmp/agent-native-design/skills/agent-native-design ~/.claude/skills/ &amp;&amp; rm -rf /tmp/agent-native-design</code>
         <button class="copy-btn" onclick="copyInstall()">Copy</button>
       </div>
       <div class="hero-links">
@@ -393,35 +393,51 @@ Done.
       </div>
       <div id="tab-claude" class="tab-content active" role="tabpanel">
         <pre># Global install (available in all projects)
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.claude/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.claude/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # Project-level install
-git clone https://github.com/Agents365-ai/agent-native-design.git .claude/skills/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design .claude/skills/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
       <div id="tab-openclaw" class="tab-content" role="tabpanel">
         <pre># Via ClawHub
 clawhub install agent-native-design
 
 # Manual install
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.openclaw/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.openclaw/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # Project-level install
-git clone https://github.com/Agents365-ai/agent-native-design.git skills/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design skills/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
       <div id="tab-hermes" class="tab-content" role="tabpanel">
         <pre># Install into Hermes engineering skills
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.hermes/skills/engineering/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.hermes/skills/engineering/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
       <div id="tab-pimo" class="tab-content" role="tabpanel">
         <pre># pi-mono reads skills from any directory you register
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/skills/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/skills/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
       <div id="tab-codex" class="tab-content" role="tabpanel">
         <pre># User-level install
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.agents/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.agents/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # Project-level install
-git clone https://github.com/Agents365-ai/agent-native-design.git .agents/skills/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design .agents/skills/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
     </div>
   </section>

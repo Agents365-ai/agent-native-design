@@ -2,6 +2,17 @@
 
 [← Back to README](../README.md)
 
+## v1.3.5 — July 9, 2026
+
+**Repo restructure for multi-skill workspace compatibility.**
+
+- Moved SKILL.md, references, agents, and scripts into `skills/agent-native-design/` subdirectory so the repo can host multiple skills (compatible with the `365-skills` marketplace sync layout).
+- Added GitHub Actions workflow to sync `skills/agent-native-design/` into the `Agents365-ai/365-skills` marketplace repo on push to main.
+- Updated install docs: manual `git clone` installs now clone to `/tmp` then `cp -r skills/agent-native-design` into the target skills directory (marketplace installs unaffected).
+- Fixed stale internal references (`examples.md` → `references/examples.md`) across SKILL.md and design-patterns.md.
+- Bumped version in SKILL.md frontmatter metadata to `1.3.5`.
+- Switched license from MIT to CC BY-NC 4.0.
+
 ## v1.3.4 — June 18, 2026
 
 **Removed the in-skill update check (Step 0).**

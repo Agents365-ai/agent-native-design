@@ -258,7 +258,7 @@
       <p>为 AI 智能体设计真正可用的 CLI。稳定的 stdout 契约、确定性退出码、dry-run、Schema 自省、委托式认证 &mdash; 作为一项评审与重构技能。</p>
       <img class="hero-image" src="assets/concept-hero-zh.png" alt="一个 CLI 同时服务三类观众：stderr 给人类、stdout JSON 给 AI 智能体、退出码给系统" loading="lazy">
       <div class="hero-install">
-        <code id="install-cmd">git clone https://github.com/Agents365-ai/agent-native-design.git ~/.claude/skills/agent-native-design</code>
+        <code id="install-cmd">git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design &amp;&amp; cp -r /tmp/agent-native-design/skills/agent-native-design ~/.claude/skills/ &amp;&amp; rm -rf /tmp/agent-native-design</code>
         <button class="copy-btn" onclick="copyInstall()">复制</button>
       </div>
       <div class="hero-links">
@@ -393,35 +393,51 @@ Done.
       </div>
       <div id="tab-claude" class="tab-content active" role="tabpanel">
         <pre># 全局安装（在所有项目中可用）
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.claude/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.claude/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # 项目级安装
-git clone https://github.com/Agents365-ai/agent-native-design.git .claude/skills/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design .claude/skills/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
       <div id="tab-openclaw" class="tab-content" role="tabpanel">
         <pre># 通过 ClawHub 安装
 clawhub install agent-native-design
 
 # 手动安装
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.openclaw/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.openclaw/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # 项目级安装
-git clone https://github.com/Agents365-ai/agent-native-design.git skills/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design skills/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
       <div id="tab-hermes" class="tab-content" role="tabpanel">
         <pre># 安装到 Hermes engineering skills 目录
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.hermes/skills/engineering/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.hermes/skills/engineering/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
       <div id="tab-pimo" class="tab-content" role="tabpanel">
         <pre># pi-mono 支持从任何注册过的目录加载 skills
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/skills/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/skills/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
       <div id="tab-codex" class="tab-content" role="tabpanel">
         <pre># 用户级安装
-git clone https://github.com/Agents365-ai/agent-native-design.git ~/.agents/skills/agent-native-design
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design ~/.agents/skills/ && \
+  rm -rf /tmp/agent-native-design
 
 # 项目级安装
-git clone https://github.com/Agents365-ai/agent-native-design.git .agents/skills/agent-native-design</pre>
+git clone https://github.com/Agents365-ai/agent-native-design.git /tmp/agent-native-design && \
+  cp -r /tmp/agent-native-design/skills/agent-native-design .agents/skills/ && \
+  rm -rf /tmp/agent-native-design</pre>
       </div>
     </div>
   </section>
